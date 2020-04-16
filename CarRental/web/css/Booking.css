@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 13, 2020, 7:41:38 AM
+    Author     : SE130204
+*/
+
+
+.booking_Container{
+    width: 1200px;
+    margin: 30px;
+}
+div.greenTable {
+  font-family: "Lucida Console", Monaco, monospace;
+  border: 1px solid #0B1B94;
+  background-color: #D4EED1;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.divTable.greenTable .divTableCell, .divTable.greenTable .divTableHead {
+  border: 0px solid #154D94;
+  padding: 50px 0px;
+}
+.divTable.greenTable .divTableBody .divTableCell {
+  font-size: 18px;
+}
+.divTable.greenTable .divTableCell:nth-child(even) {
+  background: #D0E4F5;
+}
+.greenTable .tableFootStyle {
+  font-size: 13px;
+}
+.greenTable .tableFootStyle .links {
+	 text-align: right;
+}
+.greenTable .tableFootStyle .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #24943A;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.greenTable.outerTableFooter {
+  border-top: none;
+}
+.greenTable.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+.billDetailsTable{
+    width: 1200px;
+    height: 0px;
+    overflow: scroll;
+    transition: 0.5s;
+}
+.billDetailsTable table{
+    width: 100%;  
+    font-size: 18px;
+}
+.billDetailsTable table td:nth-child(odd){background-color: #f2f2f2;}
+.cancelDetails{
+    border: 1px solid black;
+    background: darkred;
+    color: white;
+}
+.rentingButton{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background: green;
+    color: white;
+    font-size: 20px;
+}
+.endedButton{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background: darkcyan;
+    color: white;
+    font-size: 20px;
+}
+.deletedCarButton{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background: darkred;
+    color: white;
+    font-size: 20px;
+}
+
+.txtRenting{
+    background: green;
+    color: white;
+}
+.txtEnded{
+    background:darkgray;
+    color: white;
+}
+.txtDeleted{
+    background: crimson;
+    color: white;
+}
+.cancelBillButton{
+    background: darkred;
+    color: white;
+}
+.detailsButton{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background: #666666;
+    color: white;
+    font-size: 20px;
+}
+.popupBillDeleteBox{
+    position: static;
+    background: black;
+    z-index: 1;
+    transition: 0.5s;
+    visibility: hidden;
+}

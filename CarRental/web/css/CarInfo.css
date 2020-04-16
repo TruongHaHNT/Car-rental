@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 8, 2020, 7:04:00 PM
+    Author     : SE130204
+*/
+
+.carInfo_Container{
+    width: 95%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+.carInfo_Container .carInfoBox{
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 45%;
+    min-height: 500px;
+    border: 30px outset #1C6EA4;
+    border-radius: 0px 40px 40px 0px;
+    float: right;
+}
+.carInfoBox table{
+    text-align: left;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+.carInfoBox table td:nth-child(odd){background-color: #f2f2f2;}
+/*.carInfoBox table, th, td {
+    border: 1px dotted gray;
+}*/
+.carInfoBox table input{
+    font-size: 20px;
+    height: 50px;
+}
+#displayPrice{
+    font-size: 20px;
+    color: green;
+}
+.returnButton{
+    border: 1px solid black;
+    background-color: #fde76a;
+}
+.addButton{
+    border: 1px solid black;
+    background-color: darkblue;
+    color: white;
+}   
+
+.carInfo_Container .RatingBox{
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 40%;
+    min-height: 500px;
+    border: 30px inset #1C6EA4;
+    border-radius: 40px 0px 0px 40px;
+    float: left;
+    background: lightgray;
+}
+
+#carAmount{
+    width: 50px;
+}

@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 19, 2020, 6:53:31 AM
+    Author     : SE130204
+*/
+
+.addNewContainer{
+        width: 100%;
+    height: auto;
+    position: relative;
+}
+.addNew{
+    width: 100%; min-height: 400px; float: left; position: relative; overflow: hidden;
+        padding: 50px;
+        color: #fff;
+}
+.addNew .addNewBox{
+        float: left; width: 600px;
+    background: mediumblue;
+    opacity: 0.65;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5);
+
+}
+.addNew .addNewBox .datebox{
+    float: left; width: 45%;
+    padding: 5px;
+}
+.addNew .addNewBox d{
+    float: left;
+    background:  mediumblue;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold; 
+}
+
+.addNew .addNewBox #txtCarName{
+  width: 80%;
+  margin: 10px; 
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  background: black;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.addNew .addNewBox input[type=submit]{
+    margin:10px 10px 0px 0px;
+    float: right;
+    background-size: cover; width: 100px; height: 40px; border-radius: 25px
+}
+.addNew .addNewBox .cat{
+  width: 50%;
+  font-size: 18px;
+  margin: 10px; 
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background: black;
+  font-weight: bold;
+}
+.addNew .addNewBox .txtAmount{
+  width: 20%;
+  margin: 10px; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+.addNew .addNewBox .datebox .txtDate{
+  width: 99%; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+.addNew .addNewBox .datebox .time{
+  width: 49%; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+  float: left;
+}
+.addNew .addNewBox #errorRange{
+    background: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+    margin: 10px;
+}
+
+.addNew .addnewImg{
+    margin-left: 50px;
+            float: left; width: 400px;
+    background: mediumblue;
+    opacity: 0.65;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5);
+
+}

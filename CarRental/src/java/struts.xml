@@ -1,0 +1,138 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="">
+            <result type="chain">startUp</result>
+        </action>
+        <action name="loadLayout" class="truonghn.struts2.LoadLayoutAction">
+            <result name="carRental">carRental.jsp</result>
+            <result name="view">viewCar.jsp</result>
+            <result name="cart">cart.jsp</result>
+            <result name="history">bookingHistory.jsp</result>
+        </action>
+    <!-- Search function==================================================== -->
+            <action name="searchCar" class="truonghn.struts2.search.SearchCarAction">
+                <result name="carRentalPage" type="chain">loadLayout</result>
+            </action>
+            <!--view or add car to cart=================================================-->
+            <action name="viewOrAddCar" class="truonghn.struts2.search.ViewOrAddCarAction">
+                <result name="view" type="chain">viewCarDetail</result>
+                <result name="add" type="chain">addCarToCart</result>
+                <result name="error" type="chain">searchCar</result>
+            </action>
+            <!--view car =====================================================================-->
+            <action name="viewCarDetail" class="truonghn.struts2.search.ViewCarDetailAction">
+                <result name="view" type="chain">loadLayout</result>
+                <result name="fail" type="chain">loadLayout</result>
+            </action>
+            
+            
+            
+    <!--add to cart============================================================-->
+        <action name="addCarToCart" class="truonghn.struts2.cart.AddCarToCartAction">
+            <result name="success" type="chain">searchCar</result>
+            <result name="fail" type="chain">searchCar</result>
+            <result name="auth">login.jsp</result>
+        </action>
+        
+        <!--view car in cart==================================================-->
+        <action name="viewCarInCart" class="truonghn.struts2.cart.ViewCarInCartAction">
+            <result name="viewCarInCart" type="chain">loadLayout</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+        
+        <!--delete or update===================================================-->
+        <action name="deleteOrUpdateCart" class="truonghn.struts2.cart.DeleteOrUpdateCartAction">
+            <result name="deleteFromCart" type="chain">deleteCarFromCart</result>
+            <result name="updateFromCart" type="chain">updateCarInCart</result>
+            <result name="viewCart" type="chain">viewCarInCart</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+        <action name="deleteCarFromCart" class="truonghn.struts2.cart.DeleteCarFromCartAction">
+            <result name="success" type="chain">viewCarInCart</result>
+            <result name="fail" type="chain">viewCarInCart</result>
+        </action>
+        <action name="updateCarInCart" class="truonghn.struts2.cart.UpdateCarInCartAction">
+            <result name="success" type="chain">viewCarInCart</result>
+            <result name="fail" type="chain">viewCarInCart</result>
+        </action>
+            <action name="verifyCustomerCart" class="truonghn.struts2.cart.VerifyCustomerCartAction">
+                <result name="success" type="chain">addCarToTblBooking</result>
+                <result name="fail" type="chain">viewCarInCart</result>
+                <result name="loginRequired">login.jsp</result>
+            </action>
+        
+    <!--booking==========================================================================================-->    
+        <action name="addCarToTblBooking" class="truonghn.struts2.booking.AddCarToTblBookingAction">
+            <result name="searchCar" type="chain">searchCar</result>
+            <result name="failAdding" type="chain">searchCar</result>
+        </action>
+        <action name="viewBookingCar" class="truonghn.struts2.booking.ViewBookingCarAction">
+            <result name="viewBooking" type="chain">loadLayout</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+        <action name="deleteSelectedBill" class="truonghn.struts2.booking.DeleteSelectedBillAction">
+            <result name="viewBooking" type="chain">viewBookingCar</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+        <action name="deleteSelectedCarInBill" class="truonghn.struts2.booking.DeleteSelectedCarInBillAction">
+            <result name="viewBooking" type="chain">viewBookingCar</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+    <!--Car rating ====================================================================================================-->   
+        <action name="carRating" class="truonghn.struts2.rating.CarRatingAction">
+            <result name="view" type="chain">searchCar</result>
+            <result name="loginRequired">login.jsp</result>
+        </action>
+        
+    <!-- Account fumction=================================================================================== -->
+        <action name="startUp" class="truonghn.struts2.account.StartUpAction">
+            <result name="customer" type="chain">searchCar</result>
+            <result name="manager" type="chain">managerPage</result>
+            <result name="fail" type="chain">searchCar</result>
+        </action>
+        <action name="loginOrSignup" class="truonghn.struts2.account.LoginOrSignupAction">
+            <result name="loginpage">login.jsp</result>
+            <result name="logoutpage" type="chain">logout</result>
+            <result name="signuppage">signUp.jsp</result>
+        </action>
+        <action name="login" class="truonghn.struts2.account.LoginAction">
+            <result name="verify">mailCheck.jsp</result>
+            <result name="customer" type="chain">searchCar</result>
+            <result name="manager" type="chain">managerPage</result>
+            <result name="fail">login.jsp</result>
+        </action>
+        <action name="verifyOrCancel" class="truonghn.struts2.account.VerifyOrCancelAction">
+            <result name="verify" type="chain">verify</result>
+            <result name="cancel" type="chain">searchCar</result>
+            <result name="resend" type="chain">resendVerifyCode</result>
+        </action>
+        <action name="verify" class="truonghn.struts2.account.VerifyAction">
+            <result name="fail">mailCheck.jsp</result>
+            <result name="success" type="chain">searchCar</result>
+        </action>
+        <action name="resendVerifyCode" class="truonghn.struts2.account.ResendVerifyCodeAction">
+            <result name="verify">mailCheck.jsp</result>
+        </action>
+        <action name="logout" class="truonghn.struts2.account.LogoutAction">
+            <result name="success" type="chain">searchCar</result>
+        </action>
+        <action name="signup" class="truonghn.struts2.account.SignupAction">
+            <result name="verify">mailCheck.jsp</result>
+            <result name="fail">signUp.jsp</result>
+        </action>
+        <!--manager========================================================================================-->
+        <action name="managerPage" class="truonghn.struts2.manager.ManagerPageAction">
+            <result name="manager">manager.jsp</result>
+        </action>
+        <action name="addNewCar" class="truonghn.struts2.manager.AddNewCarAction">
+            <result name="addPage" type="chain">managerPage</result>
+            <result name="fail" type="chain">managerPage</result>
+        </action>
+    </package>
+    
+</struts>

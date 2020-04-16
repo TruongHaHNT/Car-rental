@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2020, 7:45:26 AM
+    Author     : SE130204
+*/
+#productnotify{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#productnotify2{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#productnotify #confirmText{
+    border: 1px solid black;
+    padding: 10px;
+    background: #009999;
+    color: white;
+    top:-10%;
+    left:-5%;
+}
+
+#productnotify #ConfirmForm{
+    margin-top: 80px;
+    margin-left: 250px;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5);
+    border: 30px outset #1C6EA4;
+    border-radius: 0px 40px 40px 0px;
+}
+#productnotify #ConfirmForm input{
+    border: 1px solid black;
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#productnotify #ConfirmForm #cancleBooking{
+    float: left;
+}
+#productnotify #ConfirmForm #confirmBooking{
+    background: darkblue;
+    color: white;
+    float: right;
+}
+
+.confirmButton_1{
+    margin: 50px;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    float: right;
+    background:green;
+    color: white;
+}

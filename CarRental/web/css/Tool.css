@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: lightgray;
+}
+
+.containerMain{
+	max-width: 1280px;
+	height: auto;
+	background-color: #fff;
+        overflow: hidden;
+}
+input[type=submit],[type=button]{
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+input:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*___SEARCH INFO___***********************************************************************/
+.info{
+	width: 100%; height: 300px; background-color: #009999; display: inline-block;
+        float: left; background-size: cover;
+}
+.logo{
+	width: 380px; height: 99%; float: left; margin: 0px auto;
+}
+.searchEngine{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.search{
+	width: 100%; min-height: 400px; float: left; position: relative; overflow: hidden;
+        padding: 50px;
+        color: #fff;
+}
+.search .advSearchBox{
+    float: left; width: 550px;
+    background: mediumblue;
+    opacity: 0.65;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5);
+}
+.search .advSearchBox .datebox{
+    float: left; width: 45%;
+    padding: 5px;
+}
+.search .advSearchBox d{
+    background:  mediumblue;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold; 
+}
+
+.search .advSearchBox #txtsearch{
+  width: 80%;
+  margin: 10px; 
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  background: black;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.search .advSearchBox input[type=submit]{
+    margin:10px 10px 0px 0px;
+    float: right;
+    background-size: cover; width: 40px; height: 40px; border-radius: 25px
+}
+.search .advSearchBox .cat{
+  width: 50%;
+  font-size: 18px;
+  margin: 10px; 
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  background: black;
+  font-weight: bold;
+}
+.search .advSearchBox .txtAmount{
+  width: 20%;
+  margin: 10px; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+.search .advSearchBox .datebox .txtDate{
+  width: 99%; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+}
+.search .advSearchBox .datebox .time{
+  width: 49%; 
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-weight: bold;
+  float: left;
+}
+.search .advSearchBox #errorRange{
+    background: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+    margin: 10px;
+}
+.search .advSearchBox #errorAmountRange{
+    background: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+    margin: 10px;
+}
+/*.search .advSearchBox #status{
+        width: 40%;
+      font-size: 18px;
+      margin: 10px; 
+      color: white;
+      display: inline-block;
+      border: 1px solid white;
+      box-sizing: border-box;
+      background: black;
+      font-weight: bold;
+}*/
+
+/* login / sign up **************************************************************************************/
+.login{
+    width: 250px;
+    height: 180px;
+	float: right;
+	margin-right: 50px;
+}
+.login input{
+	background-color: #009999;
+	color:  white;
+	padding: 14px 20px;
+	margin-top:  79px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+.login button{
+    background-color: #187a2f;
+	color:  white;
+	padding: 14px 20px;
+	margin-top:  79px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+button:hover {
+	opacity: 0.8;
+}
+input:hover {
+	opacity: 0.8;
+}
+.logout{
+    z-index: 1;
+    width: 350px;
+    height: 180px;
+    margin-right: 100px;
+    float: right;
+    position: absolute;
+}
+
+
+/***************************************************************************************************************/
+.sidenav {
+    height: 100%;
+    background-color: darkblue;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+.form-group .form-control{
+    width: 380px;
+    font-size: 20px;
+    border: 1px solid lightgreen;
+    background: whitesmoke;
+    color: darkolivegreen;
+    margin: 0px 10px;
+}
+
+.main {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white;
+}
+.main .col_md_6_col_sm_12 input{
+    font-size: 20px;
+    border: 1px solid lightgreen;
+    background: whitesmoke;
+    color: darkolivegreen;
+}
+.main .col_md_6_col_sm_12{
+    width: 50%;
+    padding: 20px;
+    background: darkcyan;
+    opacity: 0.8;
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5); 
+box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 50px 50px 50px 0px rgba(0,0,0,0.5);
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+r
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: black !important;
+    color: white;
+}
+/***___Header__**************************************************************************************************/
+
+
+/* Style the navbar */
+#navbar {
+    width: 100%;
+    height: 60px;
+  overflow: hidden;
+  background-color: #009999;
+}
+
+
+#navbar input {
+    border: none;
+    font-size: 30px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  background: #009999;
+  
+}
+#navbar input:hover{
+    color: white;
+    background: darkblue;
+}
+#navbar .leftnavBar{
+    float: left;
+}
+#navbar .rightnavBar{
+    float: right;
+}
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/*******************************************************************************/
+.body{
+    width: 100%;
+    min-height: 200px;
+    background-color: #009999;
+    margin: 10px 0px;
+    float: left;
+    
+}
+/*///////////=================================================================*/
+footer{
+    background-color: #009999;
+	width: 100%;
+	height: 300px;
+	clear: both;
+	color: aliceblue;
+        float: left;
+}
+/*
+.footer_left
+{
+	width: 25%;
+	height: 100%;
+	float: left;
+	
+}
+.footer_center1
+{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+.footer_center2
+{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+.footer_right
+{
+	width: 20%;
+	height: 100px;
+	float: right;
+	margin-top: 40px;
+	text-align: center;
+}
+
+ul
+{
+	list-style-type: square;
+	padding-top: 20px;
+}
+
+ul li
+{
+	font-size: 16px;
+	line-height: 30px;
+}*/
+
+/*manager============================================================*/
